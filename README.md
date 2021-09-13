@@ -1,4 +1,4 @@
-# A Semi-Automatic Feature Engineering Toolbox for Landslide Susceptibility Mapping:FE.LSM Tool Pack
+# A Semi-Automatic Feature Engineering Toolbox for Landslide Susceptibility Mapping: FE.LSM Tool Pack
 ## Requirements
 
 * [ArcGIS 10.3.1 or later](http://desktop.arcgis.com/en/desktop/) or [ArcGIS Pro 1.1 or later](http://pro.arcgis.com/en/pro-app/) ([don't have it? try trial edition](http://www.esri.com/software/arcgis/arcgis-for-desktop/free-trial))
