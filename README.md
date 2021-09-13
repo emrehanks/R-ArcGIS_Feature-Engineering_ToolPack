@@ -1,4 +1,4 @@
-# A Feature Engineering Toolbox in-Landslide-Susceptibility-Mapping
+# A Feature Engineering Toolbox in Landslide-Susceptibility-Mapping
 ## Requirements
 
 * [ArcGIS 10.3.1 or later](http://desktop.arcgis.com/en/desktop/) or [ArcGIS Pro 1.1 or later](http://pro.arcgis.com/en/pro-app/) ([don't have it? try trial edition](http://www.esri.com/software/arcgis/arcgis-for-desktop/free-trial))
