@@ -15,3 +15,4 @@
 * This clip shows you how to add the toolbox:
 ![](https://github.com/emrehanks/R-ArcGIS/blob/master/img/addtoolbox1.gif)
 * [Follow the step-by-step instructions and download the free user manual template provided in this case study to create your own sample work.](https://github.com/emrehanks/R-ArcGIS_Feature-Engineering_ToolPack/blob/main/EXAMPLE%20%26TUTORIAL.pdf)
+![](https://github.com/emrehanks/R-ArcGIS_Feature-Engineering_ToolPack/blob/main/EXAMPLE%20%26TUTORIAL.jpg)
