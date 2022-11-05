@@ -18,4 +18,5 @@
 ![](https://github.com/emrehanks/R-ArcGIS_Feature-Engineering_ToolPack/blob/main/EXAMPLE%20%26TUTORIAL.jpg)
 
 ## Reference
-Kutlug Sahin, E. "Implementation of free and open-source semi-automatic feature engineering tool in landslide susceptibility mapping using the machine-learning algorithms RF, SVM, and XGBoost", Stochastic Environmental Research and Risk Assessment, 2022. DOI: 10.1007/s00477-022-02330-y. https://link.springer.com/article/10.1007/s00477-022-02330-y
+Sahin, E.K. Implementation of free and open-source semi-automatic feature engineering tool in landslide susceptibility mapping using the machine-learning algorithms RF, SVM, and XGBoost. Stoch Environ Res Risk Assess (2022). https://doi.org/10.1007/s00477-022-02330-y
+https://link.springer.com/article/10.1007/s00477-022-02330-y
