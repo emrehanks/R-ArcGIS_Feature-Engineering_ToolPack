@@ -12,7 +12,7 @@ tool_exec <- function(in_params, out_params)
   round(memory.limit()/2^20, 2)
   library(arcgisbinding)
   arc.check_product()
-  arc.progress_label("Kütüphaneler Yükleniyor...")
+  arc.progress_label("KÃ¼tÃ¼phaneler YÃ¼kleniyor...")
   arc.progress_pos(0)
   if (!requireNamespace("rgdal", quietly = TRUE))
     install.packages("rgdal")
@@ -65,7 +65,7 @@ tool_exec <- function(in_params, out_params)
   #source("C:/Users/Public/kullanilanFonksiyonlar.R")
   rgdal::set_thin_PROJ6_warnings(TRUE)
   ##################################################################################################### 
-  ### Define input/output parameters #### Girdi/Çýktý Parametrelerinin Tanýmlanmasý
+  ### Define input/output parameters #### Girdi/Ã‡Ã½ktÃ½ Parametrelerinin TanÃ½mlanmasÃ½
   #####################################################################################################  
   arc.progress_label("Data Reading...")
   arc.progress_pos(20)
@@ -158,7 +158,7 @@ tool_exec <- function(in_params, out_params)
       a <- grep(txt[i], names(rasters1))
       if(length(a)){
         rasters1 <- dropLayer(rasters1,a)
-        print(cat(paste(txt[i]),"Faktör Seti Ýçerisinden Çýkarýlmýþtýr"))
+        print(cat(paste(txt[i]),"FaktÃ¶r Seti ÃÃ§erisinden Ã‡Ã½karÃ½lmÃ½Ã¾tÃ½r"))
       }
     }
   }
@@ -184,16 +184,16 @@ tool_exec <- function(in_params, out_params)
   value <- 70
   
   ##################################################################################################### 
-  ### Create Training and Testing Datasets  ####  Eðitim Test Verisinin Oluþturulmasý 
+  ### Create Training and Testing Datasets  ####  EÃ°itim Test Verisinin OluÃ¾turulmasÃ½ 
   #####################################################################################################
   arc.progress_label("Preparing DataSet...")
   arc.progress_pos(40)
-  #featurelerin tutuldugu raster veri ile train verisinin rasterini resample yapýp egitim ve test olarak ayirmak icin hazir hale getirir
+  #featurelerin tutuldugu raster veri ile train verisinin rasterini resample yapÃ½p egitim ve test olarak ayirmak icin hazir hale getirir
   valueDF <- FeatureData(rasters1,train)
   
   ### function of train/test praperation
 
-  TrainTestSplit <- function(value_table,type = "Örneklem Oraný",value = 70){
+  TrainTestSplit <- function(value_table,type = "Ã–rneklem OranÃ½",value = 70){
     
     if(type == "samplingRatio"|type =="Sample Ratio"){
       if(value > 95){
@@ -224,7 +224,7 @@ tool_exec <- function(in_params, out_params)
   testdata <- trainTestDf$test
   
   #####################################################################################################
-  ### Fit Model ### Modelin Eðitilmesi
+  ### Fit Model ### Modelin EÃ°itilmesi
   #####################################################################################################
   arc.progress_label("Model Building...")
   arc.progress_pos(60)
@@ -240,7 +240,7 @@ tool_exec <- function(in_params, out_params)
   pearsonValues <-pearsonValues[-1]
   nlist <- length(pearsonValues)
   
-  #########  Araligi Yazdýrma
+  #########  Araligi YazdÃ½rma
   intervalList <- lapply(1:nlist, function(x) NULL)
   
   for (i in 1:nlist) {
@@ -364,7 +364,7 @@ tool_exec <- function(in_params, out_params)
   cat("The skewness values of factors after processing are :")
   if(length(rownames(s))){
     for(i in 1:length(rownames(s))){
-      dataLod <- log(as.data.frame(values(data[[s[i]]]))+1-min(as.data.frame(values(data[[s[i]]])),na.rm = T))
+      dataLod <- log10(as.data.frame(values(data[[s[i]]]))+1-min(as.data.frame(values(data[[s[i]]])),na.rm = T))
       if(length(a)){
         values(data[[s[i]]]) <- as.matrix(dataLod)
         print(cat(paste(rownames(s)[i])," factor was normally distributed using Log Transformation..."))
